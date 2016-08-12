@@ -24,13 +24,13 @@ function setIndex(index) {
 
 setIndex(currentIndex);
 
-console.log(sliderFragment)
-sliderFragment.getElementById('slider-nav-right').addEventListener('click', (event) => {
+console.log(sliderFragment.querySelector('a[data-slide="left"]'))
+sliderFragment.querySelector('a[data-slide="left"]').addEventListener('click', (event) => {
     let index = currentIndex < slides.length - 1 ? currentIndex++ : currentIndex = 0;
     return setIndex(index);
 });
 
-sliderFragment.getElementById('slider-nav-right').addEventListener('click', () => {
+sliderFragment.querySelector('a[data-slide="right"]').addEventListener('click', () => {
     let index = currentIndex > 0 ? currentIndex-- : currentIndex = slides.length - 1;
     return setIndex(index);
 });
