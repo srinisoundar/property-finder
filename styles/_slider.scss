@@ -1,0 +1,51 @@
+$slide-arrows-color: #eee !default;
+$slide-arrows-padding: 5px !default;
+
+.slider {
+    position: relative;
+    height: 400px;
+}
+
+.slider-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-item {
+    width: 100%;
+    height: 100%;
+
+    &__image {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.slider-navigation {
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 444;
+    height: 100%;
+    color: $slide-arrows-color;
+    padding: $slide-arrows-padding;
+    opacity: 0.7;
+
+    &__arrow {
+        touch-action: manipulation;
+        cursor: pointer;
+    }
+}
+
+.slider-thumbnail {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+
+}
