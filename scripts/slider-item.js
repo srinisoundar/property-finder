@@ -23,6 +23,7 @@ images.forEach((imageName, index) => {
 
     img.src = IMAGE_PATH + imageName;
     img.alt = imageName;
+    img.setAttribute('data-index', index);
 
     wrapper.appendChild(img);
     thumbnailFragment.appendChild(wrapper)

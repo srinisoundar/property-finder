@@ -24,14 +24,21 @@ function setIndex(index) {
 
 setIndex(currentIndex);
 
-window.nextImage = () => {
+console.log(sliderFragment)
+sliderFragment.getElementById('slider-nav-right').addEventListener('click', (event) => {
     let index = currentIndex < slides.length - 1 ? currentIndex++ : currentIndex = 0;
     return setIndex(index);
-};
+});
 
-window.prevImage = () => {
+sliderFragment.getElementById('slider-nav-right').addEventListener('click', () => {
     let index = currentIndex > 0 ? currentIndex-- : currentIndex = slides.length - 1;
     return setIndex(index);
-};
+});
+
+sliderThumbnail.addEventListener('click', (event) => {
+    const target = event.target;
+    const index = target.getAttribute('data-index');
+    setIndex(index);
+}, false);
 
 export default sliderFragment;

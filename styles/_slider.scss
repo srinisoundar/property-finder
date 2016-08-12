@@ -4,6 +4,7 @@ $slide-arrows-padding: 5px !default;
 .slider {
     position: relative;
     height: 400px;
+    width: 100%
 }
 
 .slider-inner {
@@ -30,7 +31,7 @@ $slide-arrows-padding: 5px !default;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    z-index: 444;
+    z-index: 30;
     height: 100%;
     color: $slide-arrows-color;
     padding: $slide-arrows-padding;
@@ -42,10 +43,28 @@ $slide-arrows-padding: 5px !default;
     }
 }
 
-.slider-thumbnail {
+.slider-thumbnail-wrapper {
     position: absolute;
     left: 0;
     bottom: 0;
-    display: flex;
+    width: 100%;
+}
 
+.slider-thumbnail {
+    display: flex;
+    z-index: 40;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: space-around;
+    padding: 5px 3px;
+}
+
+.thumbnail-item {
+    height: 100px;
+    width: 100px;
+
+    &__image {
+        width: 100%;
+        height: 100%;
+    }
 }
