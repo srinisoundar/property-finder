@@ -96,3 +96,14 @@ $slide-arrows-padding: 5px !default;
         height: 100%;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .slider-inner {
+        height: 200px;
+    }
+
+    .thumbnail-item {
+        height: 75px;
+        width: 75px;
+    }
+}

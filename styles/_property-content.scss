@@ -1,12 +1,11 @@
 .property-content {
     margin-top: 1.5rem;
 
-
     &__header {
         display: flex;
         justify-content: space-between;
     }
-    
+
     &__body {
         box-shadow: 0px 0px 40px -7px rgba(0, 0, 0, 0.4);
         background: #fff;
@@ -66,7 +65,7 @@
     }
 }
 
-.content-list-item{
+.content-list-item {
     &__title {
         font-size: 12px;
     }
@@ -74,5 +73,39 @@
     &__value {
         font-size: 12px;
         font-weight: 900;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .content-description {
+        &__details {
+            display: none;
+            line-height: 1;
+        }
+
+        &__block :first-child {
+                display: block;
+        }
+
+        &__title {
+            line-height: 1.2;
+            font-size: 18px;
+            font-weight: 900;
+        }
+
+        &__name {
+            font-size: 12px;
+        }
+    }
+
+    .content-summary {
+        margin-top: 1rem;
+
+        &__list {
+            flex-wrap: wrap;
+        }
+        &__list-group {
+            width: 100%;
+        }
     }
 }

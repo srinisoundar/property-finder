@@ -18,3 +18,16 @@
     }
 
 }
+
+@media only screen and (max-width: 992px) {
+    .property-ad {
+        display:none;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width: 992px) {
+}
+
+@media only screen and (max-width: 768px) {
+
+}

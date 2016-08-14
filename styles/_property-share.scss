@@ -31,3 +31,27 @@
         }
     }
 }
+
+@media only screen and (max-width: 992px) {
+    .property-share {
+        flex-wrap:wrap;
+        flex-direction: row;
+
+        &__item {
+            width: 50%;
+
+            &:nth-last-child(2) {
+                border-bottom: none;
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .property-share {
+        &__text {
+
+        }
+    }
+}
