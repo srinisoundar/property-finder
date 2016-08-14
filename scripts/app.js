@@ -8,6 +8,7 @@ import propertyContact from './property-contact';
 import propertyAd from './property-ad';
 import propertyShare from './property-share';
 import propertyMarket from './property-market';
+import propertySimilar from './property-similar';
 
 import '../styles/index.scss';
 
@@ -21,6 +22,8 @@ document.addEventListener('DOMContentLoaded', function(event) {
     document.getElementById(ElementId.PROPERTY_AD).appendChild(propertyAd);
     document.getElementById(ElementId.PROPERTY_SHARE).appendChild(propertyShare);
     document.getElementById(ElementId.PROPERTY_MARKET).appendChild(propertyMarket);
+    document.getElementById(ElementId.PROPERTY_SIMILAR).appendChild(propertySimilar);
+    document.getElementById(ElementId.PROPERTY_INFO_2).appendChild(propertyInfo.cloneNode(true));
 });
 
 window.onload = function() {

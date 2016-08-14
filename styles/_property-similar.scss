@@ -1,10 +1,45 @@
 .property-similar {
-    font-size: 1.3rem;
     display: flex;
     justify-content: center;
+    flex-direction: column;
 
     &__heading {
-        line-height: 2;
-        font-size: 1.3em;
+        line-height: 1.5;
+        font-size: 1.5em;
+        align-self: center;
+        padding-bottom: 10px;
+    }
+
+    &__block {
+        display: flex;
+    }
+    &__item {
+        box-shadow: 0px 0px 40px -7px rgba(0, 0, 0, 0.4);
+        background: #fff;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    &__item-details {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__item-name {
+        border-bottom: 1px solid #DDDDDD;
+        font-weight: 600;
+    }
+
+    &__item-price {
+        color: red;
+        align-self: center;
+        padding-top: 5px;
+        font-weight: 600;
     }
 }
