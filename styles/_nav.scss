@@ -1,0 +1,68 @@
+.navigation {
+    margin: 0 auto;
+    height: 60px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: deepskyblue;
+
+    &__wrapper {
+        margin: 0 auto;
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    & a {
+        text-decoration: none;
+        display: block;
+        padding: 5px;
+        color: white;
+    }
+
+    & li:hover {
+        background: grey;
+    }
+
+    &__logo {
+        align-self: center;
+    }
+
+    &__menu {
+        display: flex;
+        height: 100%;
+        flex-direction: row;
+    }
+
+    &__item {
+        height: 100%;
+        align-items: center;
+        display: flex;
+        border-bottom: 3px solid gray;
+        border-right: 1px solid gray;
+
+        &:first-child {
+            border-bottom-color: red;
+        }
+
+        &:nth-child(2) {
+            border-bottom-color: darkviolet;
+        }
+
+        &:nth-child(3) {
+            border-bottom-color: green;
+        }
+
+        &:last-child {
+            border-right: none;
+        }
+    }
+}
+
+.active {
+    background: darken(red, 2%);
+}
+

@@ -4,7 +4,7 @@ function convertToDomElement(template) {
     const wrapper = document.createElement('div');
 
     wrapper.innerHTML = template;
-
+    wrapper.className += 'container';
     return fragment.appendChild(wrapper);
 }
 
@@ -18,7 +18,9 @@ function createElement(tag, attrs) {
     return element;
 }
 
+
 export default {
     convertToDomElement,
-    createElement
+    createElement,
+    scrollX
 }

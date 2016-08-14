@@ -1,16 +1,15 @@
 $slide-arrows-color: #eee !default;
 $slide-arrows-padding: 5px !default;
 
-.slider {
+.slider-wrapper {
     position: relative;
-    height: 400px;
-    width: 100%
+    font-size: 4em;
 }
 
 .slider-inner {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 400px;
 }
 
 .slider-item {
@@ -34,34 +33,63 @@ $slide-arrows-padding: 5px !default;
     z-index: 30;
     height: 100%;
     color: $slide-arrows-color;
-    padding: $slide-arrows-padding;
     opacity: 0.7;
+    padding: 0 5px;
 
     &__arrow {
         touch-action: manipulation;
         cursor: pointer;
+        color: rgba(0, 0, 0, 0.6);
     }
 }
 
 .slider-thumbnail-wrapper {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    position: relative;
+    font-size: 1em;
+    transition: transform 300ms cubic-bezier(0.86, 0, 0.07, 1);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .slider-thumbnail {
-    display: flex;
-    z-index: 40;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    justify-content: space-around;
-    padding: 5px 3px;
+    overflow-x:auto;
+    overflow-y: hidden;
+   // overflow: hidden;
+    white-space: nowrap;
+    z-index: 20;
+    width: auto;
+    padding: 5px 0px;
+
+    &__arrow {
+        position: absolute;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 3px;
+        touch-action: manipulation;
+        cursor: pointer;
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    &__arrow-left {
+        top: 0;
+        left: 0;
+    }
+
+    &__arrow-right {
+        top: 0;
+        right: 0;
+    }
 }
 
 .thumbnail-item {
     height: 100px;
     width: 100px;
+    display: inline-block;
+    padding-left: 3px;
+
+    &:last-child {
+        padding-right: 3px;
+    }
 
     &__image {
         width: 100%;

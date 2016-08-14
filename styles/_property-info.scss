@@ -1,0 +1,20 @@
+.property-info {
+    padding: 15px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 40px -7px rgba(0,0,0,0.4);
+
+    &__details {
+        display: flex;
+    }
+}
+
+.property-info-detail__item {
+    padding-right: 10px;
+}
+
+.property-price__amount {
+    color: red;
+    font-weight: 900;
+}

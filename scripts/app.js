@@ -6,7 +6,8 @@ import '../styles/index.scss';
 
 document.addEventListener('DOMContentLoaded', function(event) {
     console.log("DOM fully loaded and parsed");
-    document.getElementById(ElementId.NAVIGATION).appendChild(slider);
+    document.getElementById(ElementId.NAVIGATION).appendChild(navigation);
+    document.getElementById(ElementId.PROPERTY_SLIDE).appendChild(slider);
 
 });
 
