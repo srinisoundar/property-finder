@@ -1,6 +1,7 @@
 .property-finder-app{
     width:100%;
     height:100%;
+    background: #dcdcdc;
 }
 
 .container {
@@ -10,13 +11,26 @@
 .container-main {
     width:100%;
     height: 100%;
-    background: #dcdcdc;
     margin-top: 60px;
 
     &__wrapper {
+        display:flex;
         width:80%;
         margin: 0 auto;
-        padding-bottom: 2rem;
         padding-top: 2rem;
     }
+}
+
+.container-left {
+    width: 70%;
+    padding-right: 2em;
+}
+
+.container-right {
+    width: 30%;
+}
+
+.container-bottom {
+    width:80%;
+    margin: 2rem auto;
 }

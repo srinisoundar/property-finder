@@ -1,0 +1,10 @@
+.property-similar {
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+
+    &__heading {
+        line-height: 2;
+        font-size: 1.3em;
+    }
+}

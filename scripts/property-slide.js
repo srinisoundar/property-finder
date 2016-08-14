@@ -1,4 +1,4 @@
-import sliderTemplate from '../templates/slider.html';
+import sliderTemplate from '../templates/property-slide.html';
 import sliderItem from './slider-item';
 import utils from './utils';
 
