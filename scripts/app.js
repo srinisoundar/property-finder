@@ -1,3 +1,4 @@
+import utils from './utils';
 import {ElementId} from './constants';
 import navigation from './navigation';
 import propertyInfo from './property-info';
@@ -10,23 +11,26 @@ import propertyShare from './property-share';
 import propertyMarket from './property-market';
 import propertySimilar from './property-similar';
 
+//template
+import template from '../templates/property-app.html';
+
+//styles
 import '../styles/index.scss';
 
-document.addEventListener('DOMContentLoaded', function(event) {
-    document.getElementById(ElementId.NAVIGATION).appendChild(navigation);
-    document.getElementById(ElementId.PROPERTY_INFO).appendChild(propertyInfo);
-    document.getElementById(ElementId.PROPERTY_SLIDE).appendChild(propertySlide);
-    document.getElementById(ElementId.PROPERTY_CONTENT).appendChild(propertyContent);
-    document.getElementById(ElementId.PROPERTY_AGENCY).appendChild(propertyAgency);
-    document.getElementById(ElementId.PROPERTY_CONTACT).appendChild(propertyContact);
-    document.getElementById(ElementId.PROPERTY_AD).appendChild(propertyAd);
-    document.getElementById(ElementId.PROPERTY_SHARE).appendChild(propertyShare);
-    document.getElementById(ElementId.PROPERTY_MARKET).appendChild(propertyMarket);
-    document.getElementById(ElementId.PROPERTY_SIMILAR).appendChild(propertySimilar);
-    document.getElementById(ElementId.PROPERTY_INFO_2).appendChild(propertyInfo.cloneNode(true));
-});
+const app = utils.convertToDomElement(template);
 
-window.onload = function() {
-    console.log('window loaded')
-};
 
+app.querySelector(ElementId.NAVIGATION).appendChild(navigation);
+app.querySelector(ElementId.PROPERTY_INFO).appendChild(propertyInfo);
+app.querySelector(ElementId.PROPERTY_SLIDE).appendChild(propertySlide);
+app.querySelector(ElementId.PROPERTY_CONTENT).appendChild(propertyContent);
+app.querySelector(ElementId.PROPERTY_AGENCY).appendChild(propertyAgency);
+app.querySelector(ElementId.PROPERTY_CONTACT).appendChild(propertyContact);
+app.querySelector(ElementId.PROPERTY_AD).appendChild(propertyAd);
+app.querySelector(ElementId.PROPERTY_SHARE).appendChild(propertyShare);
+app.querySelector(ElementId.PROPERTY_MARKET).appendChild(propertyMarket);
+app.querySelector(ElementId.PROPERTY_SIMILAR).appendChild(propertySimilar);
+app.querySelector(ElementId.PROPERTY_INFO_2).appendChild(propertyInfo.cloneNode(true));
+
+
+export default app;

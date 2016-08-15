@@ -1,5 +1,6 @@
-import App from './scripts/app';
+import app from './scripts/app';
 
-(() => {
-    console.log('index')
-})();
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('property-finder-app').appendChild(app);
+});

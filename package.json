@@ -1,7 +1,7 @@
 {
   "name": "property-finder",
   "version": "1.0.0",
-  "description": "Property Finder",
+  "description": "Property Finder App",
   "scripts": {
     "build": "rimraf dist && webpack --bail --progress --profile",
     "server": "webpack-dev-server --history-api-fallback --inline --progress",
@@ -9,7 +9,7 @@
     "test-watch": "karma start --auto-watch --no-single-run",
     "start": "npm run server"
   },
-  "author": "Srinivasan",
+  "author": "Srinivasan <srini.cug@gmail.com>",
   "license": "MIT",
   "dependencies": {
   },

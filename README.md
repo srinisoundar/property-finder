@@ -12,13 +12,23 @@ $ npm install
 
 # start
 $ npm start
-
-# build
-$ npm run build
-
-# test
-$ npm run test
 ```
 
 go to [http://localhost:8080](http://localhost:8080) in your browser.
+
+###Production 
+
+```bash
+# build
+$ npm run build
+```
+
+### Run test
+
+```bash
+#test
+$ npm run test
+```
+
+
 

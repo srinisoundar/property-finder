@@ -1,7 +1,7 @@
 import utils from './utils';
 
 const IMAGE_PATH = '/assets/img/';
-const images = ['a.jpg', 'b.jpg', 'c.jpg', 'd.jpg', 'e.jpg', 'f.jpg','g.jpg'];
+const images = ['wide.jpg', 'b.jpg', 'c.jpg', 'd.jpg', 'e.jpg', 'f.jpg','g.jpg'];
 
 const imageFragment = document.createDocumentFragment();
 const thumbnailFragment = document.createDocumentFragment();
