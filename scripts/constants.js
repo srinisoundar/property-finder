@@ -16,5 +16,3 @@ export const Id = {
     CONTENT_SUMMARY: '#content-summary',
     CONTENT_DESCRIPTION: '#content-description'
 };
-
-export default {};

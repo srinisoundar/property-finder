@@ -1,20 +1,82 @@
 <div class="property-contact">
     <div class="property-contact__item">
-        <i class="fa fa-phone-square" aria-hidden="true"></i>
-        <span class="property-contact__text">
+        <div class="property-contact-item__header" data-show="contact-item__phone">
+            <i class="fa fa-phone-square" aria-hidden="true"></i>
+            <span class="property-contact__text">
             CONTACT BY PHONE
-        </span>
+            </span>
+        </div>
+        <div class="property-contact-item__block contact-item__phone">
+            <h3 class="property-contact-item__phone">055 123 45 67</h3>
+        </div>
     </div>
     <div class="property-contact__item">
-        <i class="fa fa-envelope" aria-hidden="true"></i>
-        <span class="property-contact__text">
+        <div class="property-contact-item__header" data-show="contact-item__email">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <span class="property-contact__text">
             CONTACT BY EMAIL
         </span>
+        </div>
+        <form class="property-contact-item__block contact-item__email">
+            <div class="property-contact-item__control">
+                <p class="property-contact-item__error">* Minimum two characters</p>
+                <textarea class="property-contact-item__input" rows="3" cols="50"
+                          placeholder="Type your message to the agent" id="message_agent"></textarea>
+            </div>
+            <div class="property-contact-item__control">
+                <p class="property-contact-item__error">* Minimum two characters</p>
+                <input class="property-contact-item__input" type="text" placeholder="Full name" id="fullname"/>
+            </div>
+            <div class="property-contact-item__control">
+                <p class="property-contact-item__error">* Enter a valid email id</p>
+                <input class="property-contact-item__input" type="email" placeholder="Email address" id="email"/>
+            </div>
+            <div class="property-contact-item__control">
+                <p class="property-contact-item__error">* Enter a valid phone number</p>
+                <input class="property-contact-item__input" type="tel" placeholder="Phone number" id="phone-no"/>
+            </div>
+            <div class="property-contact-item__control">
+                <button class="button property-contact-item__button" type="button" id="contact-button">SEND</button>
+                <p class="property-contact-item__error property-contact-item__error--form">* Please enter mandatory
+                    fields</p>
+            </div>
+        </form>
     </div>
     <div class="property-contact__item">
-        <i class="fa fa-pencil-square" aria-hidden="true"></i>
-        <span class="property-contact__text">
+        <div class="property-contact-item__header" data-show="contact-item__offer">
+            <i class="fa fa-pencil-square" aria-hidden="true"></i>
+            <span class="property-contact__text">
             MAKE AN OFFER
         </span>
+        </div>
+        <form class="property-contact-item__block contact-item__offer">
+            <div class="property-contact-item__offer">
+                <p class="property-contact-item__offer-heading">Your offer</p>
+                <div class="property-contact-item__control">
+                    <p class="property-contact-item__error">* Enter a valid amount</p>
+                    <div class="property-contact-item__offer-block">
+                        <input class="property-contact-item__input" placeholder="Amount" type="number" id="your-offer"/>
+                        <label class="property-contact-item__label" for="your-offer">AED/Year</label>
+                    </div>
+                </div>
+            </div>
+            <div class="property-contact-item__control">
+                <p class="property-contact-item__error">* Minimum two characters</p>
+                <input class="property-contact-item__input" type="text" placeholder="Full name" id="offer-fullname"/>
+            </div>
+            <div class="property-contact-item__control">
+                <p class="property-contact-item__error">* Enter a valid email id</p>
+                <input class="property-contact-item__input" type="email" placeholder="Email address" id="offer-email"/>
+            </div>
+            <div class="property-contact-item__control">
+                <p class="property-contact-item__error">* Enter a valid phone number</p>
+                <input class="property-contact-item__input" type="tel" placeholder="Phone number" id="offer-phone-no"/>
+            </div>
+            <div class="property-contact-item__control">
+                <button class="button property-contact-item__button" type="button" id="offer-button">SEND</button>
+                <p class="property-contact-item__error property-contact-item__error--form">* Please enter mandatory
+                    fields</p>
+            </div>
+        </form>
     </div>
 </div>

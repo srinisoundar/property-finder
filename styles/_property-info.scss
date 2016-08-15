@@ -15,7 +15,7 @@
 }
 
 .property-price__amount {
-    color: red;
+    color: #bb2540;
     font-weight: 900;
 }
 
@@ -28,10 +28,12 @@
         &__details {
             flex-wrap:wrap;
             flex-direction: row;
+            border-bottom: 1px solid #e9e9e9;
         }
 
         &__price {
             align-self: flex-end;
+            padding-top: 10px;
         }
     }
 }

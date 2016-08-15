@@ -4,8 +4,8 @@ import utils from './utils';
 
 
 const sliderFragment = utils.convertToDomElement(sliderTemplate);
-const sliderInner = sliderFragment.getElementsByClassName('slider-inner')[0];
-const sliderThumbnail = sliderFragment.getElementsByClassName('slider-thumbnail')[0];
+const sliderInner = sliderFragment.querySelector('.slider-inner');
+const sliderThumbnail = sliderFragment.querySelector('.slider-thumbnail');
 
 sliderInner.appendChild(sliderItem.imageFragment);
 sliderThumbnail.appendChild(sliderItem.thumbnailFragment);
@@ -46,5 +46,6 @@ sliderThumbnail.addEventListener('click', (event) => {
          setIndex(index);
     }
 }, false);
+
 
 export default sliderFragment;
